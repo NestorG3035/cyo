@@ -20,8 +20,10 @@
     html {
       scroll-behavior: smooth;
     }
+
     .quads{
-    font-family: serif
+    font-weight: bold
+    
 }
     #nutrional{
     font-family: 'Merienda', cursive;
@@ -30,146 +32,341 @@
   font-family: 'Ultra', serif;
 }
 
+h2{
+  font-weight:bold;
+}
+
+body{
+  text-align:center;
+  background-color:#2c37b7;
+}
+#always{
+  font-family: 'Righteous', cursive;
+  font-weight:bold;
+  color:red;
+}
+#cal4s{
+  font-family: 'Bangers', cursive;
+}
+
+
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .dropdown-button {
+      margin: 10px 10px;
+      float: right;
+      display:none;
+    }
+
+    .dropdown-menu {
+      font-size: 16px;
+    }
+
+    .glyphicon-menu-hamburger {
+      font-size: 25px;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    ul.sidenav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      height: 100%;
+      position: fixed;
+      overflow: auto;
+
+    }
+
+    #left {
+      margin-left: 25%;
+    }
+
+    ul.sidenav li a {
+      display: block;
+
+      padding: 10px 16px;
+      text-decoration: none;
+    }
+
+    ul.sidenav li a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    ul.sidenav li a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+
+    #glute {
+      width: 42.15%;
+    }
+
+    @media screen and (max-width:900px) {
+      ul.sidenav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 20%;
+
+        display: none;
+      }
+
+
+      #left {
+        margin: 0;
+      }
+      .btn-group {
+        display: none;
+      }
+      .navbar {
+        display: inline-block;
+
+      }
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        left: 5%;
+      }
+      li {
+        font-size: 15px;
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+      }
+      li a:hover {
+        background-color: #555;
+        color: white;
+
+      }}
+      @media screen and (max-width:600px){
+          ul.sidenav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 20%;
+
+        display: none;
+      }
+
+
+      #left {
+        margin: 0;
+      }
+      .btn-group {
+        display: inline;
+      }
+      .navbar {
+        display: none;
+
+      }
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        left: 25%;
+      }
+      li {
+        font-size: 15px;
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+      }
+      li a:hover {
+        background-color: #555;
+        color: white;
+
+      }
+      }
+
     
   </style>
 </head>
 
 <body>
 
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <ul class="navbar navbar-inverse">
+      <li class="active"><a href="#"> </a></li>
+
+      <li><a href="#quadworkouts">Quad muscle workouts </a></li>
+
+      <li><a href="#gluteworkouts">Glute workouts  </a></li>
+
+      <li><a href="#calfworkouts">Calf workouts  </a></li>
+
+      <li><a href="#nutritionfacts">Nutrition </a></li>
+    </ul>
+  </nav>
+
+
+  <ul class="sidenav navbar-inverse">
+    <li class="active"><a href="#"> </a></li>
+
+    <li><a href="#quadworkouts">Quad muscle workouts </a></li>
+
+    <li><a href="#gluteworkouts">Glute workouts  </a></li>
+
+    <li><a href="#calfworkouts">Calf workouts  </a></li>
+
+    <li><a href="#nutritionfacts">Nutrition </a></li>
+
+
+
+  </ul>
+  <div class="btn-group dropdown-button">
+    <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle"><li class="glyphicon glyphicon-menu-hamburger"></li></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+      <li class="active"><a href="#"> </a></li>
+
+      <li><a href="#quadworkouts">Quad muscle workouts </a></li>
+
+      <li><a href="#gluteworkouts">Glute workouts  </a></li>
+
+      <li><a href="#calfworkouts">Calf workouts  </a></li>
+
+      <li><a href="#nutritionfacts">Nutrition </a></li>
+    </ul>
+  </div>
+
   <div class="container">
-    <div class="jumbotron">
+    <div id="left" class="jumbotron">
 
 
 
 
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">BFS </a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#"> </a></li>
-            </li>
-
-            <li><a href="#quadworkouts">Quad muscle workouts </a></li>
-
-            <li><a href="#gluteworkouts">Glute workouts  </a></li>
-
-            <li><a href="#calfworkouts">Calf workouts  </a></li>
-            
-            <li><a href="#nutritionfacts">Nutrition </a></li>
-
-
-
-          </ul>
-      
-        </div>
-      </nav>
 
       <div class="container">
         <div class="jumbotron">
           <h1 class="logo">
-        </div>
-      </div>
 
 
 
 
-      <div class="container">
-        <div>
-          <h1 class="text-center">Bungies for Sports</h1>
-        </div>
-        <div>
-          <!-- Indicators -->
-          <div id="myCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img class="img-responsive" src="calf-muscles-img.jpg">
+
+            <div class="container">
+              <div>
+                <h1 class="text-center">Bungies for Sports</h1>
               </div>
+              <div>
+                <!-- Indicators -->
+                <div id="myCarousel" class="carousel slide">
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
 
-              <div class="item">
-                <img class="img-responsive" src="https://www.just-fly-sports.com/wp-content/uploads/2012/10/glute-strength.jpg">
-              </div>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="img-responsive" src="calf-muscles-img.jpg">
+                    </div>
 
-              <div class="item">
-                <img class="img-responsive" src="https://i.ytimg.com/vi/p0Z3LbPQ_mA/maxresdefault.jpg">
-              </div>
-            </div>
+                    <div class="item" id="glute">
+                      <img class="img-responsive" src="https://www.just-fly-sports.com/wp-content/uploads/2012/10/glute-strength.jpg">
+                    </div>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <div class="item">
+                      <img class="img-responsive" src="https://i.ytimg.com/vi/p0Z3LbPQ_mA/maxresdefault.jpg">
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
     <span class="sr-only">Previous</span>
   </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right"></span>
     <span class="sr-only">Next</span>
   </a>
-          </div>
+                </div>
 
-        </div>
-        <div></div>
-        <div></div>
-      </div>
+              </div>
+              <div></div>
+              <div></div>
+            </div>
 
-      <br>
-      </br>
+            <br>
+            </br>
 
-      <div id="quadworkouts">
-        <h2 class="quads"> All about quads </h2>
-          <h4> Wokrkouts on quads coming soon.  </h4>
+            <div id="quadworkouts">
+              <h2 class="quads"> All about quads </h2>
+              <br>
+              <h4> These legs of yours have all the power you could have ever wanted. Your legs are the powerhouse of your movement. Heres some workouts that can be used to improve those leg muscles.<br> - As always squats are the best meothod to improve strength in your quad muscles. <a href = "https://www.openfit.com/best-quad-exercises">Click here to know different workouts for your quads and to get them in great performance.  </a> </h4>
 
 
-      </div>
-      <br></br>
+            </div>
+            <br></br>
 
-      <div id="gluteworkouts">
-      <h2>GLUTES!</h2>
-        <h4 >
+            <div id="gluteworkouts">
+              <h2>!~GLUTES~!</h2>
+              <h4>
 
-          One of the most important muscles to worry about while training to increase your vertical jump is your glutes. Aka your butt. When jumping, the human arches down and bends his/her knees to jump. While doing this, you glutes bend and gain some power. When you jump back up your glutes use that power along with the power in other leg muscles to lift your body up. To extend that muscle power, you'll have to work the muscle out. 
-        </h4>
+         One of the most important muscles to worry about while training to increase your vertical jump is your glutes. Aka your butt. When jumping, the human arches down and bends his/her knees to jump. While doing this, you glutes bend and gain some power. When you jump back up your glutes use that power along with the power in other leg muscles to lift your body up. To extend that muscle power, you'll have to work the muscle out. <a href="https://www.fitnessblender.com/videos/at-home-glute-workout-burnout-butt-and-thigh-workout">A link for glute workouts.</a>
+              </h4>
+      
+              <h3>Workouts for Glutes</h3>
+              <h4>(Daily Stretches)<br> -Hamstring stretches<br> -Calf Stretches<br> -Quad Stretches<br> -Glute Stretches<br> (Workouts/Sets/Reps)
+                <br> -Squat and Hold: 30 squats, hold squat position for 30 seconds/5 sets (Weights are optional)<br> -Squat Jumps: Do a squat and on your way up, jump as high as you can 20X, hold squat for 30sec.<br> -Lunges -Squats
 
-<h3>Workouts for Glutes</h3>
-<h4>(Daily Stretches)<br> 
--Hamstring stretches<br>
--Calf Stretches<br>
--Quad Stretches<br>
--Glute Stretches<br>
-(Workouts/Sets/Reps)<br>
--Squat and Hold: 30 squats, hold squat position for 30 seconds/5 sets (Weights are optional)<br>
--Squat Jumps: Do a squat and on your way up, jump as high as you can 20X, hold squat for 30sec.<br>
--Lunges<br>
--Squats<br> 
-</h4>
+  
+
+
 
       </div>
         <br></br>
       <div id="calfworkouts">
-        <h2> !!!!CALFS!!!! </h32>
+        <h2> !!!!CALVES!!!! </h2>
           <h4>
-         Looking out for your body is very crucial when it comes to working out so you have to make sure you obtain every single part  to its full potential especially the calfs. <br></br> 
+         Looking out for your body is very crucial when it comes to working out so you have to make sure you obtain every single part  to its full potential especially the calves. <h4 id ="cal4s"> To start it off here calf raises are simple to get you started with your calves. All you need to do is to stand up, don't keep a slouched back, keep a nice posture. Then with your toes lift up your whole body off the ground from the heel. Do this 50 times for 5 sets. <br> <a href= "https://www.openfit.com/calves-workout-exercises"> Here are more calf workouts you can do as well!</a></h4>  <br> 
          <ul><h2> YOU NEED STRETCHES</h2></ul>
-         <p>It is ALWAYS the most important part of every calf workout </p>
+         <h4>It is <p id ="always">ALWAYS</p> the most important part of every single workout you ever do </h4>
           </h4>
         </div>
         <br></br> 
 
 <div id ="nutritionfacts">
   <h2>NUTRITION</h2>
-  <p id ="nutrional"> It is important to keep a good balanced nutritional diet for your body. <a href="https://www.northcentralsurgical.com/blog/10-foods-building-strong-bones-muscles-174.html">Here's something for a nutritional diet for strong bones and muscles.</a> If you start the routine of making your own food every single day then you'll see your life change for the better. The more you know about the foods you eat for your body the better the results. <a https://www.eatthis.com/best-foods-to-eat-for-muscle-and-strength> Another link for your awsome body</a></p>
+  <p id ="nutrional"> It is important to keep a good balanced nutritional diet for your body. <a href="https://www.northcentralsurgical.com/blog/10-foods-building-strong-bones-muscles-174.html">Here's something for a nutritional diet for strong bones and muscles.</a> If you start the routine of making your own food every single day then you'll see your life change for the better. The more you know about the foods you eat for your body the better the results.</p>
  
-  
-  <a https://www.eatthis.com/best-foods-to-eat-for-muscle-and-strength> Another link for your awsome body</a>
-  
+  <h2>
+  <a href= "https://www.eatthis.com/best-foods-to-eat-for-muscle-and-strength"> Another link for your awsome body</a>
+  </h2>
 </div>
+
+
+                <br></h4>
+
+            </div>
+            <br></br>
+           
 
 
 
